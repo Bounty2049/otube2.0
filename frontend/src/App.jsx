@@ -11,8 +11,18 @@ export default function App() {
     <div className='wrapper'>
       <Navbar />
       <div className='main'>
-        <Category />
-        <Product />
+        <div className='card'>
+          <Product />
+          <Product />
+        </div>
+        <div className='card'>
+          <Product />
+          <Product />
+        </div>
+        <div className='card'>
+          <Product />
+          <Product />
+        </div>
       </div>
       <Footer />
     </div>

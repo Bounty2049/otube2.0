@@ -6,11 +6,19 @@
     max-width: 400px;
     background-color: seagreen;
     margin: 50px 20px;
+    box-sizing: border-box;
 }
 
-.product-details h1 {
-    font-size: 20px;
+.product-details a {
+    text-decoration: none;
+    font-size: 16px;
     color: #fff;
+}
+
+.product-details .image {
+    width: 80px;
+    height: 80px;
+    float: right;
 }
 
 .product-details p {
@@ -36,6 +44,16 @@
     justify-content: flex-end;
 }
 
+.product-actions a img {
+    width: 30px;
+    height: 30px;
+}
+
+.product-actions button img {
+    width: 30px;
+    height: 30px;
+}
+
 .like-button,
 .dislike-button {
     margin-bottom: 10px;
@@ -45,3 +63,6 @@
     margin-inline-start: 15px;
 }
 
+.price {
+    color: #fff;
+}

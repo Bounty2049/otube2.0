@@ -1,5 +1,6 @@
 import React from 'react';
-import './Product.css'; // Import CSS file for Product component styling
+import './Product.css'; 
+
 
 function Product() {
   const videoUrl = 'https://www.example.com/video.mp4https://youtu.be/hlwlM4a5rxg';
@@ -7,22 +8,26 @@ function Product() {
   return (
     <div className="product-container">
       <div className="product-details">
-        <video controls>
-          <source src={videoUrl} type="video/mp4" />
-          <img src="path_to_image" alt="Product Image" />
-        </video>
-        <h1>Title</h1>
-        <p>Description</p>
-        <p>Category: Category Name</p>
-        <p>Owner: Owner Name</p>
-        <p>Published: Publication Date</p>
+        <img className='image' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTw3HApB4bsvabXW3L14cV-LhFo0L71QmEESJN3vW9Ow&s" alt="" />
+        <a href='/course/id'>Курс по React разработке на JavaScript от DOV school</a>
+        <p>Школа: ProductStar</p>
+        <p>Курс: Фронтэнд разработка</p>
       </div>
       <div className="product-actions">
-        <button className="like-button">Like</button>
-        <button className="dislike-button">Dislike</button>
-        <button>Share</button>
-        <button>Add to library</button>
-        <button>Actions</button>
+        <a href=''>
+          <img src="/src/images/product/star.svg" alt="Отзывы" />
+        </a>
+        <a href=''>
+          <img src="/src/images/product/message.svg" alt="Комментарии" />
+        </a>
+        <a href='' type=''>
+          <img src="/src/images/product/share.svg" alt="Поделиться" />
+        </a>
+        <button><img src="/src/images/product/heart.svg" alt="" /></button>
+        <button><img src="/src/images/product/dots.svg" alt="" /></button>
+      </div>
+      <div className='price'>
+        <p>1500 р</p>
       </div>
     </div>
   );

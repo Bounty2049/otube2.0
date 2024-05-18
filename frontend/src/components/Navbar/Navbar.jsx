@@ -6,6 +6,7 @@ export default function Navbar() {
         <nav className='navbar'>
             <div className="logo">
                 <a href="/">OTube 2.0</a> 
+                <a href="/catalog" className='catalog'>Catalog</a>
             </div>
             <ul className="nav-links">
                 <li><a href="/create-product">Create Product</a></li>
